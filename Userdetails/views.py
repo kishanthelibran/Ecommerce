@@ -17,6 +17,5 @@ def RegisterUser(request):
         serializers.is_valid(raise_exception=True)
         serializers.save()
         return Response('User Registered Successfully')
-
     else:
         return Response('Phone Number Already Exists')
